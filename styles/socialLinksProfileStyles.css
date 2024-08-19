@@ -34,7 +34,7 @@ body {
 
 .user-name {
     font-size: var(--heading);
-    font-weight: var(--regular);
+    font-weight: var(--extra-bold);
     color: var(--white);
 }
 
@@ -51,8 +51,6 @@ body {
 }
 
 .user-social-links-container {
-    list-style: none;
-    text-decoration: none;
     display: flex; flex-direction: column; justify-content: center; align-items: center; gap: var(--space-200);
     width: 100%;
 }
@@ -67,6 +65,7 @@ body {
     border-radius: 8px;
     text-align: center;
     transition: 300ms ease-in-out;
+    text-decoration: none;
 }
 
 .link:hover {
