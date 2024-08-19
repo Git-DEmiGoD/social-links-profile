@@ -1,0 +1,95 @@
+@import './projectVariables.css';
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    line-height: 1.5;
+}
+
+.main-wrapper {
+    height: 100vh; width: 100vw;
+    background-color: var(--grey-900);
+    position: relative;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.main-container {
+    padding: var(--space-500);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    gap: var(--space-300); background-color: var(--grey-800); border-radius: 12px;
+    min-width: 304px;
+}
+
+.user-profile-image-container img {
+    height: 88px; width: 88px; border-radius: 50%;
+}
+
+.user-profile-details-container {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    gap: var(--space-50); width: 100%;
+}
+
+.user-name {
+    font-size: var(--heading);
+    font-weight: var(--regular);
+    color: var(--white);
+}
+
+.user-location {
+    font-size: var(--text);
+    font-weight: var(--bold);
+    color: var(--green);
+}
+
+.user-description {
+    font-size: var(--text);
+    font-weight: var(--regular);
+    color: var(--white);
+}
+
+.user-social-links-container {
+    list-style: none;
+    text-decoration: none;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: var(--space-200);
+    width: 100%;
+}
+
+.link {
+    background-color: var(--grey-700);
+    font-size: var(--text);
+    font-weight: var(--bold);
+    color: var(--white);
+    padding: var(--space-150) 0px;
+    width: 100%;
+    border-radius: 8px;
+    text-align: center;
+    transition: 300ms ease-in-out;
+}
+
+.link:hover {
+    color: var(--grey-900);
+    background-color: var(--green);
+}
+
+@media only screen and (max-width: 450px) {
+    .main-container {
+        min-width: 32px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 450px) {
+    .main-container {
+        min-width: 420px;
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: var(--white);
+}

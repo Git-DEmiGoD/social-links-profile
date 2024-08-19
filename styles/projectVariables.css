@@ -1,0 +1,37 @@
+@import './fonts.css';
+
+:root {
+
+    /* screens */
+    --mobile: 375px;
+    --tablet: 768px;
+    --desktop: 1440px;
+
+    /* colors */
+    --grey-900: #141414;
+    --grey-800: #1F1F1F;
+    --grey-700: #333333;
+    --green: #C4F82A;
+    --white: #FFFFFF;
+
+    /* font-family */
+    --main-font: "Inter", sans-serif;
+
+    /* font-weights */
+    --extra-bold: 700;
+    --bold: 600;
+    --regular: 400;
+
+    /* font-sizes */
+    --text: 14px;
+    --heading: 24px;
+
+    /* spacing */
+    --space-500: 40px;
+    --space-300: 24px;
+    --space-200: 16px;
+    --space-150: 12px;
+    --space-100: 8px;
+    --space-50: 4px;
+
+}
